@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tab_bar/Fregment2/fragment2add.dart';
 import 'package:tab_bar/Fregment2/fragment2mail.dart';
+import 'package:tab_bar/Fregment2/fragment2more.dart';
 import 'package:tab_bar/Fregment2/fragment2working.dart';
 
 void main() {
@@ -50,8 +51,12 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
         ),
-        body: TabBarView(
-            children: [Fragment2mail(), Fragment2working(), Fragment2add()]),
+        body: TabBarView(children: [
+          Fragment2mail(),
+          Fragment2working(),
+          Fragment2add(),
+          Fragment2more(),
+        ]),
       ),
     );
   }
